@@ -1054,6 +1054,8 @@ namespace SerialPortWgd
                 //选中
                 if (chkSendMore.Checked)
                 {
+                    //自动选中card类型接收
+                    this.rbtnCardInfo.Checked = true;
                     //显示发送选中指令结束后停止发送
                     this.chkSendEnd.Visible = true;
                     this.chkAutoSendNet.Checked = true;
